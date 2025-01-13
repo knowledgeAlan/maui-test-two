@@ -9,7 +9,12 @@ public partial class App : Application
 
 	protected override Window CreateWindow(IActivationState? activationState)
 	{
+
+		// var navPage = new Window(new AppShell());
+		//  var navPage = new Window(new FlyoutContentPageDemo());
+		var navPage = new Window(new TabbedPageDemo());
+		return navPage;
 		// return new Window(new AppShell());
-		return new Window(new ContentPageDemo());
+		// return new Window(new ContentPageDemo());
 	}
 }
